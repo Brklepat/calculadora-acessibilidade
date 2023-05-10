@@ -1,9 +1,11 @@
-import data from '../questions.json' assert { type: 'json'};
-
-data.forEach((question) => {
-  const currentQuestion = getQuestionTemplate(question);
-  document.querySelector('#question-container').insertAdjacentHTML('beforeend', currentQuestion);
-})
+async function logJSONData() {
+  const response = await fetch("https://brklepat.github.io/calculadora-acessibilidade/questions.json");
+  const jsonData = await response.json();
+  jsonData.forEach((question) => {
+    const currentQuestion = getQuestionTemplate(question);
+    document.querySelector('#question-container').insertAdjacentHTML('beforeend', currentQuestion);
+  })
+}
 
 function getQuestionTemplate(question) {
 
@@ -17,3 +19,5 @@ function getQuestionTemplate(question) {
       </select>
   </div>`;
 }
+
+logJSONData();
