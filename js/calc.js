@@ -14,7 +14,7 @@ function calculaAcessibilidade() {
   const percentual = pontuacao / criterios.length * 100;
 
   const resultEl = document.querySelector('#result');
-  resultEl.textContent = percentual + '%';
+  resultEl.textContent = `A acessibilidade do estabelecimento é de ${percentual}%`;
 
   var modalPontuacao = new bootstrap.Modal(document.getElementById('modalPontuacao'), {});
   modalPontuacao.show();
