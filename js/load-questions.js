@@ -1,5 +1,5 @@
 async function logJSONData() {
-  const response = await fetch("https://brklepat.github.io/calculadora-acessibilidade/questions.json");
+  const response = await fetch("https://brklepat.github.io/calculadora-acessibilidade/questions.json?v=" + Date.now());
   const jsonData = await response.json();
   jsonData.forEach((question) => {
     const currentQuestion = getQuestionTemplate(question);
