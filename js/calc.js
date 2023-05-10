@@ -13,7 +13,7 @@ function calculaAcessibilidade() {
   const criterios = document.querySelectorAll('.criterio');
   criterios.forEach(c => pontuacao += parseInt(c.value));
 
-  const percentual = pontuacao / criterios.length * 100;
+  const percentual = (pontuacao / criterios.length * 100).toFixed(2);
 
   const resultEl = document.querySelector('#result');
   resultEl.textContent = `A acessibilidade do estabelecimento é de ${percentual}%`;

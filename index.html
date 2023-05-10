@@ -17,60 +17,14 @@
                 <div class="card py-3 px-2">
                     <div class="row">
                         <div class="col-12 text-end">
-                            <button type="button" class="btn btn-sm btn-secondary" 
-                                data-bs-toggle="modal" 
+                            <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="modal"
                                 data-bs-target="#sobre">
                                 ?
                             </button>
                         </div>
                     </div>
                     <form id="form-calculadora">
-                        <div class="mb-3">
-                            <label for="possui-rampa" class="form-label">Possui rampa?</label>
-                            <select id="possui-rampa" class="form-select criterio" aria-label="Possui rampa?" required>
-                                <option value="" selected disabled>Selecione</option>
-                                <option value="1">Sim</option>
-                                <option value="0">Não</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="possui-porta-larga" class="form-label">Possui porta larga?</label>
-                            <select id="possui-porta-larga" class="form-select criterio"
-                                aria-label="Possui porta larga?" required>
-                                <option value="" selected disabled>Selecione</option>
-                                <option value="1">Sim</option>
-                                <option value="0">Não</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="possui-banheiro-adaptado" class="form-label">Possui banheiro adaptado?</label>
-                            <select id="possui-banheiro-adaptado" class="form-select criterio" required
-                                aria-label="Possui banheiro adaptado?">
-                                <option value="" selected disabled>Selecione</option>
-                                <option value="1">Sim</option>
-                                <option value="0">Não</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="possui-sinalizacao-adequada" class="form-label">Possui sinalização
-                                adequada?</label>
-                            <select id="possui-sinalizacao-adequada" class="form-select criterio" required
-                                aria-label="Possui sinalização adequada?">
-                                <option value="" selected disabled>Selecione</option>
-                                <option value="1">Sim</option>
-                                <option value="0">Não</option>
-                            </select>
-                        </div>
-                        <div class="mb-3">
-                            <label for="possui-estacionamento-acessivel" class="form-label">Possui estacionamento
-                                acessível?</label>
-                            <select id="possui-estacionamento-acessivel" class="form-select criterio" required
-                                aria-label="Possui estacionamento">
-                                <option value="" selected disabled>Selecione</option>
-                                <option value="1">Sim</option>
-                                <option value="0">Não</option>
-                            </select>
-                        </div>
+                        <div id="question-container"></div>
                         <div class="d-grid gap-2 mt-3">
                             <button type="submit" class="btn btn-primary btn-lg">
                                 Avaliar
@@ -101,9 +55,9 @@
                 <div class="modal-header">
                     <h5 class="modal-title">Sobre</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                  </div>
+                </div>
                 <div class="modal-body">
-                   Pequena descrição sobre o trabalho, autores, etc.
+                    Pequena descrição sobre o trabalho, autores, etc.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
@@ -118,6 +72,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script type="module" src="js/load-questions.js"></script>
     <script src="js/calc.js"></script>
 </body>
 

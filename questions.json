@@ -1,0 +1,17 @@
+[
+    {
+        "description": "Possui rampa?"
+    },
+    {
+        "description": "Possui porta larga?"
+    },
+    {
+        "description": "Possui banheiro adaptado?"
+    },
+    {
+        "description": "Possui sinalização?"
+    },
+    {
+        "description": "Possui estacionamento?"
+    }
+]
