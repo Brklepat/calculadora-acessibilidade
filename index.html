@@ -17,9 +17,9 @@
                 <div class="card py-3 px-2">
                     <div class="row">
                         <div class="col-12 text-end">
-                            <button type="button" class="btn btn-sm btn-secondary" data-bs-toggle="popover"
-                                data-bs-title="Sobre" data-bs-placement="left"
-                                data-bs-content="Colocar aqui pequena descrição sobre o trabalho">
+                            <button type="button" class="btn btn-sm btn-secondary" 
+                                data-bs-toggle="modal" 
+                                data-bs-target="#sobre">
                                 ?
                             </button>
                         </div>
@@ -87,6 +87,23 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <span id="result"></span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="sobre">
+        <div class="modal-dialog modal-dialog-centered modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Sobre</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                <div class="modal-body">
+                   Pequena descrição sobre o trabalho, autores, etc.
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
