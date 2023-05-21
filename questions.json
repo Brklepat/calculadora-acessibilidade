@@ -15,12 +15,24 @@
         "description": "Possui estacionamento?"
     },
     {
-        "description": "Pergunta teste1?"
+        "description": "Possui elevador para cadeirante?"
     },
     {
-        "description": "Pergunta teste2?"
+        "description": "Possui bebedouros adaptados?"
     },
     {
-        "description": "Pergunta teste3?"
+        "description": "Possui sinais sonoros?"
+    },
+    {
+        "description": "Possui vagas sinalizadas?"
+    },
+    {
+        "description": "Possui corrimão nas escadas?"
+    },
+    {
+        "description": "Possui assento para obesos?"
+    },
+    {
+        "description": "Possui interprete de libras?"
     }
 ]
